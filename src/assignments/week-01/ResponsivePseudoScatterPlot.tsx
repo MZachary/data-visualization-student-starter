@@ -9,17 +9,40 @@ interface DataPoint {
 }
 
 const data: DataPoint[] = [
-  { x: 132, y: 391 },
-  { x: 330, y: 349 },
-  { x: 410, y: 192 },
-  { x: 527, y: 257 },
-  { x: 688, y: 119 },
-  { x: 878, y: 55 },
+  { x: 100, y: 100 },
+  { x: 100, y: 150 },
+  { x: 100, y: 200 },
+  { x: 100, y: 250 },
+  { x: 100, y: 300 },
+  { x: 100, y: 350 },
+  { x: 100, y: 400 },
+  { x: 400, y: 100 },
+  { x: 400, y: 150 },
+  { x: 400, y: 200 },
+  { x: 400, y: 250 },
+  { x: 400, y: 300 },
+  { x: 400, y: 350 },
+  { x: 400, y: 400 },
+  { x: 200, y: 250 },
+  { x: 300, y: 250 },
+  { x: 600, y: 100 },
+  { x: 700, y: 100 },
+  { x: 800, y: 100 },
+  { x: 900, y: 100 },
+  { x: 750, y: 150 },
+  { x: 750, y: 200 },
+  { x: 750, y: 250 },
+  { x: 750, y: 300 },
+  { x: 750, y: 350 },
+  { x: 600, y: 400 },
+  { x: 700, y: 400 },
+  { x: 800, y: 400 },
+  { x: 900, y: 400 },
 ];
 
 const ORIGINAL_WIDTH = 960;
 const ORIGINAL_HEIGHT = 500;
-const RADIUS = 34;
+const RADIUS = 50;
 
 export function ResponsivePseudoScatterPlot() {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -39,7 +62,8 @@ export function ResponsivePseudoScatterPlot() {
       .join('circle')
       .attr('cx', (d: DataPoint) => xScale(d.x))
       .attr('cy', (d: DataPoint) => yScale(d.y))
-      .attr('r', RADIUS);
+      .attr('r', RADIUS)
+      .style('fill','lavender');
   }, [dimensions]);
 
   return (
