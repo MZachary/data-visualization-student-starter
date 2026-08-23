@@ -63,7 +63,7 @@ export function ResponsivePseudoScatterPlot() {
       .attr('cx', (d: DataPoint) => xScale(d.x))
       .attr('cy', (d: DataPoint) => yScale(d.y))
       .attr('r', RADIUS)
-      .style('fill','lavender');
+      .style('fill', 'lavender');
   }, [dimensions]);
 
   return (

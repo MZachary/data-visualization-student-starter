@@ -49,7 +49,9 @@ function App() {
                 key={assignment.id}
                 onClick={() => handleSelectAssignment(assignment.id)}
                 className={`w-full text-left px-3 py-2 rounded transition-colors ${
-                  selectedAssignmentId === assignment.id ? 'font-bold bg-gray-100' : 'hover:bg-gray-50'
+                  selectedAssignmentId === assignment.id
+                    ? 'font-bold bg-gray-100'
+                    : 'hover:bg-gray-50'
                 }`}
               >
                 {assignment.name}
