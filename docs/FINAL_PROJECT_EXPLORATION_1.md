@@ -20,4 +20,9 @@ https://app.electricitymaps.com/map/live/fifteen_minutes
 they have a very advanced visualization but it is a bit "heavy" compared to what i am envisioning for my tool. I want mine to be a bit more clear/comparison focused on each regions ultimate source of energy
 
 sketches:
+this sketch shows the energy production amount for each energy source for a day. the "width" of the line chart across time shows how much energy is coming from it
+<img width="849" height="1131" alt="image" src="https://github.com/user-attachments/assets/041f0238-dc69-4b20-9982-c92c06a5edab" />
+
+this sketch shows a map of the US, with fake example powerplants for where the energy is coming from
+<img width="1509" height="1131" alt="image" src="https://github.com/user-attachments/assets/1a59ef7a-cdab-43e3-b6d8-5a553210619a" />
 
