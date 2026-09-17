@@ -3,6 +3,8 @@ import { ResponsivePseudoScatterPlot } from './week-01/ResponsivePseudoScatterPl
 import { LoadingAndSummarizingData } from './week-02/DatasetStats.tsx';
 import { ElectricityGeneration } from './week-03/ElectricityGeneration';
 
+import { ElectricityGenerationTimeline } from './week-04/ElectricityGeneration';
+
 export interface Assignment {
   id: string;
   name: string;
@@ -25,6 +27,7 @@ export const assignments: Assignment[] = [
     name: 'Week 3',
     component: ElectricityGeneration,
   },
+  { id: '4', name: 'Week 4', component: ElectricityGenerationTimeline },
 ];
 
 export const assignmentsMap = new Map(assignments.map((ex) => [ex.id, ex]));

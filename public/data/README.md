@@ -4,7 +4,8 @@ i had to actually write a quick python script to actually download the data and 
 anyway it tracks the hourly generation of energy in the US at each electricity balancing authority
 examples of sources include nuclear, coal, solar, wind
 
-i grabbed the data from sunday august 30 to wednesday september 2
+The current CSV contains 151,391 rows from 2026-09-03T00 through 2026-09-16T06 UTC.
+The downloader requests the previous 14 complete UTC days each time it runs; some reports may not yet be available.
 
 the api is accessible here:
 

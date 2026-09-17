@@ -175,9 +175,9 @@ export function ElectricityGeneration() {
       )}
 
       <p className="mt-4 text-sm text-gray-600">
-        Source: EIA hourly generation CSV, August 30–September 2, 2026. Each bar is one reported
-        fuel source for the selected hour. Negative values are preserved; missing sources are not
-        treated as zero. Reporting areas include balancing authorities and regional totals.
+        Source: EIA hourly generation CSV. Each bar is one reported fuel source for the selected
+        hour. Negative values are preserved; missing sources are not treated as zero. Reporting
+        areas include balancing authorities and regional totals.
       </p>
     </section>
   );
