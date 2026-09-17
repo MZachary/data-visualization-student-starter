@@ -48,3 +48,23 @@ Search tasks depend on what the user already knows. Users could look up a known 
 Query tasks include identifying a single region's fuel share at a particular time, comparing a few regions or periods, and summarizing the full generation mix over a selected scope.
 
 These tasks can form a sequence: summarize a region's typical daily generation mix, locate a period that differs from that pattern, identify which fuel sources changed, and compare that period with another region or season. The individual steps support the larger goal of understanding how electricity generation varies by place and time.
+
+## Validation
+
+These are some hypothetical ways I could check if the project works at each of the four levels.
+
+### 1. Domain situation
+
+My user could be someone curious about how electricity is generated in their region. I would talk to them and watch how they currently find this information, to make sure I understand what they want to know. They might care about the electricity delivered to their home, which is different from what is generated in their balancing authority.
+
+### 2. Data and task abstraction
+
+I want users to compare fuel sources, regions, and changes over time. I would need to decide when to show total generation vs percentage of generation, since a bigger region could produce more renewable energy but have a smaller renewable share. I would let users explore their own questions and see if these comparisons actually help them.
+
+### 3. Visual encoding and interaction idiom
+
+I could try a stacked area chart or separate line charts and see which makes changes in each fuel source throughout the day easier to understand. I might also use a map for powerplant locations. I would ask users to find things like the hour with the most solar generation, and compare how long it takes and how many mistakes they make with each chart.
+
+### 4. Algorithm
+
+The tool needs to load the data and update when someone changes the region or time period. I would check that the totals and percentages are correct, and measure how long updates take with larger amounts of data. If it is too slow, I could save common summaries so they do not need to be recalculated every time.
