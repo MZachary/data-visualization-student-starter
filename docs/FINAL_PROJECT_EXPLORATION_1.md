@@ -68,3 +68,24 @@ I could try a stacked area chart or separate line charts and see which makes cha
 ### 4. Algorithm
 
 The tool needs to load the data and update when someone changes the region or time period. I would check that the totals and percentages are correct, and measure how long updates take with larger amounts of data. If it is too slow, I could save common summaries so they do not need to be recalculated every time.
+
+## New Learnings/Ideas:
+
+One of the things i have learned immediately from my first initial sketches are that I believe a line chart is significantly better at displaying this data over time than the bar chart idea i had. The bar charts can still be useful for a specific hour comparison, but for looking for trends during time periods the line charts i have started to make are much better. see image for line charts:
+
+<img width="1297" height="1112" alt="image" src="https://github.com/user-attachments/assets/a3cd3482-aa0d-4170-8568-1cc909ec6fed" />
+
+and then these bar charts from week 3 might come back for a single hourly comparison instead of the big table of numbers that you see in the bottom of the image above:
+
+<img width="1123" height="620" alt="image" src="https://github.com/user-attachments/assets/eda83337-2f45-40a7-8013-48c70a34aed0" />
+
+That is one problem i have with the current week 5 visual. I think the numbers at the bottom are really hard to see when comparing all of the energy sources.
+
+Additionally, and youll see this in the north star plot, I'm still entirely missing any way to compare different regions or reporting authorities. so thats probably the next big thing i need to work on, and itll require changing the page around a bit to get another plot in. I did use AI to generate my north star plot based off of all the things that I really want my final project to become. that looks like this:
+
+<img width="1536" height="1024" alt="electricity-north-star-sketch" src="https://github.com/user-attachments/assets/d5e49b8a-b28c-4ef8-8260-a444569b3bf0" />
+
+One thing I am still tracking as a goal is the map of america with where the energy is generated. Its kind of a silly goal because it requires a completely separate dataset that will for sure be difficult to find, but I think asking the average person how there energy is generated and even where at is a question few people can answer and I want my project to be able to answer that. 
+
+Another thing that will prove important is doing some data management. My dataset _can_ be very large to get to what i want, so i think some amount of down selecting/averaging of the data will be important. The goal isnt really to let someone make a line chart of 365 days of energy generation, its more to give them the ability to see on average how is there energy generated, how does that change during a day/month/season, and how does it compare to other regions.
+
