@@ -89,3 +89,21 @@ One thing I am still tracking as a goal is the map of america with where the ene
 
 Another thing that will prove important is doing some data management. My dataset _can_ be very large to get to what i want, so i think some amount of down selecting/averaging of the data will be important. The goal isnt really to let someone make a line chart of 365 days of energy generation, its more to give them the ability to see on average how is there energy generated, how does that change during a day/month/season, and how does it compare to other regions.
 
+
+## Week 6 — Comparison plot V1
+
+[Open Week 6](https://mzachary.github.io/data-visualization-student-starter/?example=6&hideSidebar=true) · [Implementation](../src/assignments/week-06/ElectricityComparison.tsx) · [Submission notes](WEEK_06.md)
+
+This version implements the comparison part of my north-star sketch. Week 5 let me explore one region or authority at a time, but it was hard to compare places and the hourly numbers were difficult to scan. Week 6 puts two EIA regions side by side, starting with California and Texas, and replaces the hourly number cards with paired horizontal bars. Regions use familiar names and the EIA's reported regional totals directly.
+
+The default is an average day for the available dates in September 2026. The current California/Texas comparison includes September 3–15: 13 shared local dates with reports in all 24 clock-hour bins in both regions. It is explicitly labeled as an available-days average, not the entire month. An actual-day option lets me investigate individual dates, including partial days.
+
+Both charts align local clock hours using a stated reference city for each region: Pacific time for California and Central time for Texas. Regions can span time zones, so these are visualization reference clocks rather than official region-wide zones. Timestamps are converted before grouping by date and hour, with daylight saving handled by the reference city's time zone.
+
+Both line charts use the same axes and fuel colors. Moving across either chart inspects the same local hour in both, and the hour slider supports keyboard inspection. Selecting fuels highlights them across both plots and narrows the hourly bars without changing the scale. The MWh/share toggle compares generation amounts or the reported mix.
+
+![Week 6 comparison plot: California and Texas average days aligned to local time](week-06/comparison.png)
+
+Missing fuel observations are excluded from averages, never treated as zero. The hourly bars show how many days contributed to each fuel's average. Negative net generation is retained. In average mode, shares divide each fuel's mean by the sum of all fuel means, rather than averaging daily percentages. Repeated fall-back clock hours are averaged within their date; dates missing any of the 24 clock-hour bins are excluded from the average. Coverage of all hours does not guarantee coverage of every fuel.
+
+The U.S. map remains a later goal. Next steps include gathering a full month of data and showing how much individual days vary around the average. A useful peer-feedback task is to compare California and Texas's solar generation at local noon, then switch to shares and explain how the comparison changes.
