@@ -9,6 +9,8 @@ import { InteractiveElectricityGeneration } from './week-05/ElectricityGeneratio
 
 import { ElectricityComparison } from './week-06/ElectricityComparison';
 
+import { ReptileTree } from './week-07/ReptileTree';
+
 export interface Assignment {
   id: string;
   name: string;
@@ -34,6 +36,7 @@ export const assignments: Assignment[] = [
   { id: '4', name: 'Week 4', component: ElectricityGenerationTimeline },
   { id: '5', name: 'Week 5', component: InteractiveElectricityGeneration },
   { id: '6', name: 'Week 6', component: ElectricityComparison },
+  { id: '7', name: 'Week 7', component: ReptileTree },
 ];
 
 export const assignmentsMap = new Map(assignments.map((ex) => [ex.id, ex]));

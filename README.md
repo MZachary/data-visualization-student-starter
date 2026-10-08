@@ -15,3 +15,7 @@ How to use, for subsequent assignments:
 - Update the index at `src/assignments/index.ts` to add the new listing
 - Redeploy to GitHub pages
 - Submit the link to your hosted assignment in GitHub pages
+
+## Week 7
+
+[The reptile tree](src/assignments/week-07/README.md) recreates an Observable hyperbolic tree viewer with 12,650 reptile species. Select **Week 7** or open `?example=7`. The entry includes the source checklist, reproducible data preparation, and citations.
