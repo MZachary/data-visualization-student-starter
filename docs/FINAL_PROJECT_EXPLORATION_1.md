@@ -107,3 +107,13 @@ Both line charts use the same axes and fuel colors. Moving across either chart i
 Missing fuel observations are excluded from averages, never treated as zero. The hourly bars show how many days contributed to each fuel's average. Negative net generation is retained. In average mode, shares divide each fuel's mean by the sum of all fuel means, rather than averaging daily percentages. Repeated fall-back clock hours are averaged within their date; dates missing any of the 24 clock-hour bins are excluded from the average. Coverage of all hours does not guarantee coverage of every fuel.
 
 The U.S. map remains a later goal. Next steps include gathering a full month of data and showing how much individual days vary around the average. A useful peer-feedback task is to compare California and Texas's solar generation at local noon, then switch to shares and explain how the comparison changes.
+
+## Week 8 — From an average day to individual days
+
+[Open Week 8](https://mzachary.github.io/data-visualization-student-starter/?example=8&hideSidebar=true) · [Implementation and data notes](../src/assignments/week-08/README.md)
+
+This iteration expands the electricity dataset to January, July, and September 2026 for all 13 EIA regions, with smaller region/month files loaded only when selected. Each panel can choose its own month, allowing comparisons between places or between winter and summer in the same place.
+
+The new daily-variation view draws individual days as thin lines behind the thick average for one selected fuel. This makes it possible to investigate how much day-to-day variation the average hides. Hovering identifies a daily line; clicking it opens that date's full generation mix. A date selector and button support the same task without relying on precise pointer movement. The hourly bars retain sample counts, and the variation view adds each region's range at the selected hour.
+
+A useful evaluation task is to compare California and Texas's wind generation at 18:00 in September, identify a day that differs from the average, then inspect its other fuel sources. Another task is to compare January and July in the same region. The power-plant map remains a future iteration.

@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 /docs/images/*
+
+# Python data preparation
+__pycache__/
+*.pyc
+.env

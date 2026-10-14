@@ -11,7 +11,6 @@ the api is accessible here:
 
 https://api.eia.gov/v2/electricity/rto/fuel-type-data/data/
 
-
 Each row represents the amount of electricity generated from one energy source by one balancing authority during a particular hour.
 A balancing authority is an organization responsible for maintaining the balance between electricity supply and demand within a particular portion of the electrical grid.
 
@@ -45,3 +44,8 @@ value-units
 Type: Categorical
 Description: Units used for the value field. In this dataset, the values are reported in megawatt-hours.
 
+## Week 8 region/month snapshots
+
+`week-08/manifest.json` indexes 39 compact JSON snapshots: all 13 EIA regions in January, July, and September 2026. Each file covers a local calendar month using its stated reference city. The browser fetches only the selected files. The original CSV remains in use for Weeks 2–6.
+
+Run `python3 get_data.py --months 2026-01 2026-07 2026-09` from the repository root to reproduce the downloads (existing files are skipped; add `--refresh` for revisions). Use an `EIA_API_KEY` environment variable or an ignored `.env.local` file. See [Week 8 documentation](../../src/assignments/week-08/README.md) for schema, coverage rules, and offline preparation.
