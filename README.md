@@ -23,3 +23,7 @@ How to use, for subsequent assignments:
 ## Week 8
 
 [How typical is an average day?](src/assignments/week-08/README.md) expands the electricity comparison to January, July, and September 2026 for all 13 regions. Load just the selected region/month files, compare seasonal patterns, reveal individual days behind the average, and click a day to investigate its full fuel mix. Select **Week 8** or open `?example=8`.
+
+## Week 10
+
+[Compare the hours that matter](src/assignments/week-10/README.md) builds on Week 8 with linked time-window brushing and an interactive fuel legend. Drag across either chart to compare a window’s average hourly generation or generation mix, hover or focus legend items to preview fuels, and click to pin selections. Open **Week 10** or `?example=10`.
