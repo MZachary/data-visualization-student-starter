@@ -27,3 +27,7 @@ How to use, for subsequent assignments:
 ## Week 10
 
 [Compare the hours that matter](src/assignments/week-10/README.md) builds on Week 8 with linked time-window brushing and an interactive fuel legend. Drag across either chart to compare a window’s average hourly generation or generation mix, hover or focus legend items to preview fuels, and click to pin selections. Open **Week 10** or `?example=10`.
+
+## Week 11
+
+[Where electricity begins](src/assignments/week-11/README.md) adds an EIA power-plant map to the electricity explorer. Browse 14,066 plants, link fuel highlighting to the charts, search plant details, and filter capacity-sized dots. Separate **Power plants** and **Generation patterns** tabs preserve exploration state, with emoji fuel legends. Open **Week 11** or `?example=11`.

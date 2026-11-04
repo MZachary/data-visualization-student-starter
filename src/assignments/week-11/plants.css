@@ -1,0 +1,246 @@
+.w11-plant-map {
+  margin: 24px 0 32px;
+  padding: 24px;
+  border: 1px solid #d8e1d7;
+  border-radius: 12px;
+  background: #fffefa;
+}
+.w11-plant-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+.w11-plant-heading h2 {
+  font:
+    30px/1.2 Georgia,
+    serif;
+  margin-bottom: 8px;
+}
+.w11-plant-heading p,
+.w11-plant-explanation,
+.w11-plant-hint,
+.w11-plant-methods {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #5e7268;
+}
+.w11-plant-heading label {
+  min-width: 180px;
+  display: grid;
+  gap: 6px;
+}
+.w11-plant-explanation {
+  margin: 14px 0;
+  max-width: 980px;
+}
+.w11-plant-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.w11-plant-legend button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  font-size: 11px;
+  border: 1px solid #d8e1d7;
+  border-radius: 5px;
+}
+.w11-plant-legend button[aria-pressed='true'] {
+  background: #e9efe4;
+  border-color: #729073;
+}
+.w11-plant-legend i,
+.w11-plant-detail i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.w11-plant-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 18px;
+  margin: 18px 0 12px;
+}
+.w11-plant-controls > label:first-child {
+  display: grid;
+  gap: 6px;
+  flex: 1 1 250px;
+}
+.w11-plant-controls input[type='search'] {
+  width: 100%;
+  padding: 9px;
+  background: #fff;
+  border: 1px solid #c6d2c4;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.w11-plant-size {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+.w11-plant-zoom {
+  display: flex;
+  gap: 5px;
+}
+.w11-plant-zoom button,
+.w11-plant-pagination button,
+.w11-plant-detail button {
+  border: 1px solid #c6d2c4;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.w11-plant-count {
+  font-size: 12px;
+  margin: 12px 0;
+}
+.w11-plant-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 18px;
+}
+.w11-plant-svg {
+  width: 100%;
+  aspect-ratio: 1.8;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #d8e1d7;
+  touch-action: pan-y;
+  cursor: grab;
+  overflow: hidden;
+}
+.w11-plant-svg:active {
+  cursor: grabbing;
+}
+.w11-plant-svg circle {
+  cursor: pointer;
+}
+.w11-plant-detail {
+  padding: 18px;
+  background: #eef2e9;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.w11-plant-detail h3 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 9px;
+}
+.w11-plant-detail p {
+  margin: 8px 0;
+}
+.w11-plant-mw {
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
+.w11-plant-detail li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 7px 0;
+}
+.w11-plant-detail li b {
+  margin-left: auto;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.w11-plant-hint {
+  margin: 8px 0;
+}
+.w11-plant-list,
+.w11-plant-methods {
+  border-top: 1px solid #d8e1d7;
+  margin-top: 18px;
+  padding-top: 14px;
+}
+.w11-plant-map summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.w11-plant-list-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 20px;
+  margin: 12px 0;
+}
+.w11-plant-list-items button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px;
+  text-align: left;
+  font-size: 12px;
+  border-bottom: 1px solid #d8e1d7;
+}
+.w11-plant-list-items button:hover,
+.w11-plant-list-items button[aria-pressed='true'] {
+  background: #e9efe4;
+}
+.w11-plant-list-items small {
+  display: block;
+  color: #5e7268;
+  margin-top: 3px;
+}
+.w11-plant-pagination {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 12px;
+}
+.w11-plant-methods p {
+  margin-top: 12px;
+}
+.w11-plant-methods a {
+  text-decoration: underline;
+}
+.w11-plant-capacity-key {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.w11-plant-capacity-key text {
+  font-size: 11px;
+  fill: #5e7268;
+}
+@media (max-width: 1100px) {
+  .w11-plant-layout {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .w11-plant-map {
+    padding: 14px;
+  }
+  .w11-plant-heading {
+    flex-direction: column;
+  }
+  .w11-plant-heading label {
+    width: 100%;
+  }
+  .w11-plant-list-items {
+    grid-template-columns: 1fr;
+  }
+  .w11-plant-heading h2 {
+    font-size: 26px;
+  }
+}
+
+.w11-plant-minimum {
+  display: grid;
+  gap: 6px;
+  min-width: 150px;
+}
