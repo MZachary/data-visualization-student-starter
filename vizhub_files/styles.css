@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading,
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #475569;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  z-index: 5;
+}
+
+.ctrl-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: #475569;
+}
+
+.ctrl-label {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #475569;
+}
+
+.ctrl-select {
+  font: inherit;
+  font-size: 13px;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-width: 140px;
+}
+
+.ctrl-select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.period-group {
+  align-items: flex-start;
+}
+
+.period-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 420px;
+}
+
+.period-btn {
+  font: inherit;
+  font-size: 12px;
+  color: #1e293b;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.period-btn:hover {
+  background: #eef2f7;
+}
+
+.period-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.period-btn.active {
+  background: #0f172a;
+  color: #f8fafc;
+  border-color: #0f172a;
+}
+
+/* Side rail (styled primarily inline by D3; ensure typography wins) */
+.negative-rail,
+.negative-rail * {
+  box-sizing: border-box;
+}
