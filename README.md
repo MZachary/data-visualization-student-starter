@@ -31,3 +31,7 @@ How to use, for subsequent assignments:
 ## Week 11
 
 [Where electricity begins](src/assignments/week-11/README.md) adds an EIA power-plant map to the electricity explorer. Browse 14,066 plants, link fuel highlighting to the charts, search plant details, and filter capacity-sized dots. Separate **Power plants** and **Generation patterns** tabs preserve exploration state, with emoji fuel legends. Open **Week 11** or `?example=11`.
+
+## Week 13
+
+[Focus across patterns and places](src/assignments/week-13/README.md) continues the Week 11 final-project direction with direct line inspection, unambiguous brushed-window controls, a more prominent plant-map scope, and fuel filters that always remain visible and removable across views. Open **Week 13** or `?example=13`.

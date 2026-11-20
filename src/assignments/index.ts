@@ -17,6 +17,7 @@ import { ElectricityExplorer as ElectricityExplorerWeek10 } from './week-10/Elec
 import { ElectricityExplorer as ElectricityExplorerWeek11 } from './week-11/ElectricityExplorer';
 
 import { ElectricityTreemap } from './week-12/ElectricityTreemap';
+import { ElectricityExplorer as ElectricityExplorerWeek13 } from './week-13/ElectricityExplorer';
 
 export interface Assignment {
   id: string;
@@ -48,6 +49,7 @@ export const assignments: Assignment[] = [
   { id: '10', name: 'Week 10', component: ElectricityExplorerWeek10 },
   { id: '11', name: 'Week 11', component: ElectricityExplorerWeek11 },
   { id: '12', name: 'Week 12', component: ElectricityTreemap },
+  { id: '13', name: 'Week 13', component: ElectricityExplorerWeek13 },
 ];
 
 export const assignmentsMap = new Map(assignments.map((ex) => [ex.id, ex]));
